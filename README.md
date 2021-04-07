@@ -16,7 +16,14 @@ URL = {https://library.seg.org/doi/abs/10.1190/segam2020-3428378.1},
 ```
 
 
-The repository contains all the data used to run the codes. Clone the github repo to an appropriate directory on your machine. Once 
+The repository contains all the data used to run the codes. Clone the github repo to an appropriate directory on your machine. You may use a dedicated IDE like Pycharm or Spyder to run the `main.py` file, which will extract the data, perform training, and then use the trained models to infer on the Marmousi 2 and SEAM sections to print out the estimated 2-D profiles as well as various regression metrics between the estimated and ground-truth impedance for both datasets. Alternatively, you may use the command line to to run codes and print results, as follows:
+
+```
+cd <project root directory>
+python main.py --no_wells_marmousi 50 --no_wells_seam 12 --epochs 900 --gamma 0.0001
+```
+
+In case you face problems with running the codes, please contact Ahmad Mustafa at amustafa9@gatech.edu.
 
 
 
